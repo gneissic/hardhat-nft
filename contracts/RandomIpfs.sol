@@ -32,7 +32,7 @@ string[] internal s_dogTokenUris;
 uint256 private immutable i_mintFee;
 address private owner;
 
-//enum
+//enums
 enum Breed {Pug, Shiba_inu, St_benard }
 //events
 event NftRequested(uint256 indexed requestId, address indexed requester);
