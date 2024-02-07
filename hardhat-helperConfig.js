@@ -7,20 +7,19 @@ const networkConfig = {
         mintFee: ethers.utils.parseEther("0.02"),
         gasLane: "0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c",
         subscriptionId : "6926",
-        callbackGasLimit : "50000",
-        interval: "30"
+        callbackGasLimit : "500000",
     },
     31337:{
         name: "hardhat",
         mintFee: ethers.utils.parseEther("0.02"),
         gasLane: "0x474e34a077df58807dbe9c96d3c009b23b3c6d0cce433e59bbf5b34f823bc56c",
-        callbackGasLimit : "50000",
-        interval: "30"
+        callbackGasLimit : "500000",
+        
         
     }
 }
 const developmentChains = ["hardhat", "localhost"]
 const waitConfirmations = 6
 module.exports= {
-    developmentChains, networkConfig, blockConfirmations
+    developmentChains, networkConfig, waitConfirmations
 }

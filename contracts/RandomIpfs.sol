@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.7;
+pragma solidity ^0.8.8;
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 import "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
@@ -40,7 +40,7 @@ event NftMinted(uint256 indexed tokenId , Breed indexed breed, address minter);
 
 
 
-constructor (address vrfCoordinatorV2, uint64 subscriptionId, bytes32 keyHash, uint32 callBackGasLimit, string[3] memory dogTokenUris, uint256 mintFee) 
+constructor (address vrfCoordinatorV2, uint64 subscriptionId, bytes32 keyHash, uint256 mintFee, uint32 callBackGasLimit, string[3] memory dogTokenUris ) 
 VRFConsumerBaseV2(vrfCoordinatorV2) ERC721("RandomDogsNft", "DOGS")  {
     i_vrfCoordinatorV2 = VRFCoordinatorV2Interface(vrfCoordinatorV2);
     i_subscriptionId = subscriptionId;
