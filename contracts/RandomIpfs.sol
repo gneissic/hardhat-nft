@@ -79,11 +79,9 @@ VRFConsumerBaseV2(vrfCoordinatorV2) ERC721("RandomDogsNft", "DOGS")  {
 
      for (uint256 i = 0; i < chanceArray.length; i++) {
       if (moddedRng >= cumSum && moddedRng < chanceArray[i] ) {
-         
          return Breed(i);
-
       } 
-      cumSum  =chanceArray[i];
+      cumSum = chanceArray[i];
          
 
      }
@@ -93,7 +91,6 @@ VRFConsumerBaseV2(vrfCoordinatorV2) ERC721("RandomDogsNft", "DOGS")  {
  function getOwner()public view returns (address) {
    return owner;
  }
- 
  function withdraw() public  {
    if (getOwner() != msg.sender) {
             revert RandomIpfs__OwnableUnauthorizedAccount();

@@ -719,8 +719,8 @@
       "artifacts": []
     },
     "C:\\Users\\Nwodoh\\Documents\\codes\\hardhat-nft\\contracts\\RandomIpfs.sol": {
-      "lastModificationDate": 1707309263779,
-      "contentHash": "5fd807e2c4dd2413ee44b34f214c0faf",
+      "lastModificationDate": 1707346566713,
+      "contentHash": "ff206f156356d79a6b9243b07779e6fa",
       "sourceName": "contracts/RandomIpfs.sol",
       "solcConfig": {
         "version": "0.8.20",

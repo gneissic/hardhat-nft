@@ -8,7 +8,9 @@ const { assert } = require("chai");
       accounts = await ethers.getSigners()
               deployer = accounts[0]
         await deployments.fixture(["basicnft"])
-        basicNft = await ethers.getContract("BasicNft")
+        basicNft = await ethers.getContract("BasicNft", deployer)
+      
+
       })
       describe("constructor", function () {
         it("it initializes the nft correctly", async ()=>{
